@@ -30,3 +30,26 @@ Essa biblioteca é ideal para desenvolvedores Delphi que buscam uma solução ro
 * Compatibilidade: Projetada para ser compatível com várias versões do Delphi, a RESTClientLib oferece suporte tanto para aplicativos legados quanto para novas implementações.
 * Motores de Requisição: Com suporte a Indy, NetHTTP e Synapse, a RESTClientLib permite que os desenvolvedores escolham o motor mais adequado às suas necessidades específicas, proporcionando maior flexibilidade e controle sobre o comportamento das requisições.
 * Manipulação de Erros e Exceções: A biblioteca inclui um sistema robusto de manipulação de erros, com mensagens claras e tratativas de exceções que ajudam a depurar problemas durante a comunicação com APIs.
+
+#### Motores de Requisição
+> [!WARNING]\
+Para selecionar o motor na requisição é disponibilizado o tipo `TRESTClientLibRequestLibraryKind`, sendo o motor `NetHTTP` o padrão da biblioteca.
+
+| Motor | Tipo | Diretiva de Compilação | Site |
+|---|---|---|---|
+| NetHTTP | TRESTClientLibRequestLibraryKind.NetHTTP | -- |  -- | 
+| Indy | TRESTClientLibRequestLibraryKind.Indy | -- | -- | 
+| Synapse | TRESTClientLibRequestLibraryKind.Synapse | RESTClientLib_SYNAPSE | http://synapse.ararat.cz/doku.php/start |
+
+```delphi
+Uses
+  RESTClientLib;
+begin
+  TRESTClientLib
+    .Build(TRESTClientLibRequestLibraryKind.NetHTTP);
+  ...
+end;
+```
+
+
+
