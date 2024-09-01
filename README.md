@@ -53,5 +53,20 @@ begin
 end;
 ```
 
+## ⚙️ Instalação Automatizada
+
+Utilizando o [**Boss**](https://github.com/HashLoad/boss/releases/latest) (Dependency manager for Delphi) é possível instalar a biblioteca de forma automatizada.
+
+```
+boss install https://github.com/antoniojmsjr/RESTClientLib
+```
+
+## ⚙️ Instalação Manual
+
+Se você optar por instalar manualmente, basta adicionar as seguintes pastas ao seu projeto, em *Project > Options > Delphi Compiler > Target > All Configurations > Search path*
+
+```
+..\RESTClientLib\Source
+```
 
 
