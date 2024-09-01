@@ -31,7 +31,6 @@ Essa biblioteca é ideal para desenvolvedores Delphi que buscam uma solução ro
 * Motores de Requisição: Com suporte a Indy, NetHTTP e Synapse, a RESTClientLib permite que os desenvolvedores escolham o motor mais adequado às suas necessidades específicas, proporcionando maior flexibilidade e controle sobre o comportamento das requisições.
 * Manipulação de Erros e Exceções: A biblioteca inclui um sistema robusto de manipulação de erros, com mensagens claras e tratativas de exceções que ajudam a depurar problemas durante a comunicação com APIs.
 * Exemplos de uso: Repositório com diversos exemplos de uso da biblioteca, por exemplo, VCL, FMX e um servidor de aplicação em [Horse](https://github.com/HashLoad/horse).
-</br>
 
 #### Motores de Requisição
 > [!WARNING]\
@@ -69,4 +68,11 @@ Se você optar por instalar manualmente, basta adicionar as seguintes pastas ao 
 ..\RESTClientLib\Source
 ```
 
+## ⚡️ Uso da biblioteca
+
+Os exemplos estão disponíveis na pasta do projeto:
+
+```
+..\RESTClientLib\Samples
+```
 
