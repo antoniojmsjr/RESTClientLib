@@ -16,3 +16,9 @@
 </br>
 
 # RESTClientLib
+
+**RESTClientLib** é uma biblioteca projetada para facilitar a integração e consulta a APIs REST, é uma solução completa e versátil para quem precisa realizar integrações REST de maneira eficiente e sem complicações.
+
+Implementado na linguagem `Delphi`, utiliza o conceito de [fluent interface](https://en.wikipedia.org/wiki/Fluent_interface) para guiar no uso da biblioteca, desenvolvida para oferecer praticidade e eficiência, a RESTClientLib oferece suporte aos principais motores de requisição, como Indy, NetHTTP e Synapse, expansível a outros motores.
+
+Essa biblioteca é ideal para desenvolvedores Delphi que buscam uma solução robusta, flexível e eficiente para integrar serviços REST em suas aplicações.
