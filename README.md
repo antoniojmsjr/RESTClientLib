@@ -22,3 +22,11 @@
 Implementado na linguagem `Delphi`, utiliza o conceito de [fluent interface](https://en.wikipedia.org/wiki/Fluent_interface) para guiar no uso da biblioteca, desenvolvida para oferecer praticidade e eficiência, a RESTClientLib oferece suporte aos principais motores de requisição, como Indy, NetHTTP e Synapse, expansível a outros motores.
 
 Essa biblioteca é ideal para desenvolvedores Delphi que buscam uma solução robusta, flexível e eficiente para integrar serviços REST em suas aplicações.
+
+#### Recursos
+
+* Facilidade de Integração: Com uma interface intuitiva e fácil de usar, a RESTClientLib torna o processo de integrar APIs REST em aplicações Delphi mais rápido e eficiente.
+* Economia de Tempo: Com a RESTClientLib, desenvolvedores podem se concentrar na lógica de aplicação, economizando tempo no desenvolvimento e integração com APIs.
+* Compatibilidade: Projetada para ser compatível com várias versões do Delphi, a RESTClientLib oferece suporte tanto para aplicativos legados quanto para novas implementações.
+* Motores de Requisição: Com suporte a Indy, NetHTTP e Synapse, a RESTClientLib permite que os desenvolvedores escolham o motor mais adequado às suas necessidades específicas, proporcionando maior flexibilidade e controle sobre o comportamento das requisições.
+* Manipulação de Erros e Exceções: A biblioteca inclui um sistema robusto de manipulação de erros, com mensagens claras e tratativas de exceções que ajudam a depurar problemas durante a comunicação com APIs.
