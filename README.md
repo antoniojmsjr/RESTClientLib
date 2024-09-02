@@ -43,6 +43,7 @@ Essa biblioteca é ideal para desenvolvedores Delphi que buscam uma solução ro
 ```delphi
 Uses
   RESTClientLib;
+
 begin
   TRESTClientLib
     .Build(TRESTClientLibRequestLibraryKind.NetHTTP);
