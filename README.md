@@ -33,8 +33,6 @@ Essa biblioteca é ideal para desenvolvedores Delphi que buscam uma solução ro
 * Exemplos de uso: Repositório com diversos exemplos de uso da biblioteca, por exemplo, VCL, FMX e um servidor de aplicação em [Horse](https://github.com/HashLoad/horse).
 
 #### Motores de Requisição
-> [!WARNING]\
-Para selecionar o motor na requisição é disponibilizado o tipo `TRESTClientLibRequestLibraryKind`, sendo o motor `NetHTTP` o padrão da biblioteca.
 
 | Motor | Tipo | Diretiva de Compilação | Site |
 |---|---|---|---|
