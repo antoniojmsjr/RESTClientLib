@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{94E369FC-BA47-4CCD-844F-36BF7643FB96}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="RESTClientLibApp\RESTClientLibApp.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RESTClientLibAPI\RESTClientLibAPI.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="RESTClientLibApp">
+        <MSBuild Projects="RESTClientLibApp\RESTClientLibApp.dproj"/>
+    </Target>
+    <Target Name="RESTClientLibApp:Clean">
+        <MSBuild Projects="RESTClientLibApp\RESTClientLibApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RESTClientLibApp:Make">
+        <MSBuild Projects="RESTClientLibApp\RESTClientLibApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RESTClientLibAPI">
+        <MSBuild Projects="RESTClientLibAPI\RESTClientLibAPI.dproj"/>
+    </Target>
+    <Target Name="RESTClientLibAPI:Clean">
+        <MSBuild Projects="RESTClientLibAPI\RESTClientLibAPI.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RESTClientLibAPI:Make">
+        <MSBuild Projects="RESTClientLibAPI\RESTClientLibAPI.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="RESTClientLibApp;RESTClientLibAPI"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="RESTClientLibApp:Clean;RESTClientLibAPI:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="RESTClientLibApp:Make;RESTClientLibAPI:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

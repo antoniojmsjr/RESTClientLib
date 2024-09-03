@@ -1,0 +1,796 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'RESTClientLib API'
+  ClientHeight = 661
+  ClientWidth = 770
+  Color = clWindow
+  Constraints.MinWidth = 700
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnlClient: TPanel
+    AlignWithMargins = True
+    Left = 3
+    Top = 3
+    Width = 764
+    Height = 655
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'pnlClient'
+    Color = clWindow
+    ParentBackground = False
+    ShowCaption = False
+    TabOrder = 0
+    object bvlClientHeader: TBevel
+      AlignWithMargins = True
+      Left = 1
+      Top = 93
+      Width = 760
+      Height = 1
+      Margins.Left = 1
+      Align = alTop
+      Shape = bsTopLine
+    end
+    object pnlClientHeader: TPanel
+      Left = 0
+      Top = 0
+      Width = 764
+      Height = 90
+      Align = alTop
+      BevelOuter = bvNone
+      Caption = 'pnlClientHeader'
+      ShowCaption = False
+      TabOrder = 0
+      object imgLogo: TImage
+        Left = 0
+        Top = 0
+        Width = 500
+        Height = 90
+        Align = alLeft
+        Picture.Data = {
+          0954506E67496D61676589504E470D0A1A0A0000000D49484452000001F40000
+          005A0803000000796954920000004E504C5445D24645D24342FEF8F8D75C5BD1
+          3F3ED03B3AFFFEFEFFFFFFD34847D24746F9E7E6DD7676F1C4C3D55150E08E8E
+          D86868C83F40EAAAA9E69C9CEDB7B7CE3534F4D2D1F7DCDCFCF0F0E08181C851
+          5380ACD209000013BC4944415478DAED9D897AE3A8B280414216D8F292B4FB7C
+          73DEFFE1EECCED255E640B19246E1568F71A477632B7559949DB125A7F0AAA8A
+          825032C81F27F4B36F6090E7CB00FD0F94E74317C65D38F9EC47FF73E5C9D081
+          78EADB6B6AC307EE9F244F852E8C6451964FF764BC95A3701D0ED83F45FA84CE
+          65F7A7B55B9894F98B3897017E5BE4E92419B07F8AF4089DA761E3C774F602F2
+          B9D8F1357C34C575FD70331DB07F82F4099DA42129FF6F2B798DBC048E1F2859
+          1CF8A0EDCF97FEA083A213D471F825795BD12DF2546640BA793DFCB650E180FD
+          D9D26FF34ECAD6BDA9E8D8972F9D9677AF865B7C8ED8DB2D0358031D8360901E
+          A537E84D45EFEC80865D672790A358EC6C92AC06C8CF9307687A5BCBE5429CD6
+          F25270CFDC93243503F627499F9ADE255E203FABE5A518D839F3259164C0FE14
+          E953D3CF5BECD7AE822566FB60C0FE1C795C448EDF8C1C05B53D3003F6A7C8A3
+          A08BE45A5FDE158BDDA7311BFCB747CB83A00BF9D7F5BEBC2B805DBD68DAF5DF
+          06E95B1E031D986FD53B91A31817A49303F587CA63A073EEC7EF474E0AFF2DA5
+          03F587CA43A083A2AF3373DFA901FBDCFF9B0FFDFA03E5CB4147EA61E20FAAFE
+          4079509F1E6AA5823B0F3674B21DA05F144EA8F98093F3A03E5D9B30BBAB5347
+          E66ABA6303F40B2214C97C12DC4DFD412E1B5017077A0F7638666C0643EEA2D0
+          F1743B4D7677537F949F6E74C4F3F7C4669C60F9285B7F553B8EC3FFB2FCF8B0
+          209230F545C8718452A831239A99437A6F7BF8B0302C97C1F27D21B92204EFCB
+          9B98F3C633B48A8B76A25663677D88EC9C81B4F71C9FC99D857E2364ADDC1646
+          CDFDED6BFB31BA63168A1AED3E06F3EA7A8D278A58C246876496DCDB1EF60B9D
+          93C65BBE3C907E2C68EECFE52163E49697C9EA8F59339B5A48D6A29E15DF3013
+          9716D95AEE9DB253A7D58D67C164EDE2800CEAA19011239ED9DB574DC7FE8E6A
+          F26161AD6BDA1B556692ED89ADF82F1EC993A33A61E66F9380F8B98ACDCDD769
+          499FD045B2203BA2AB04B9770CB395E3ABF4A7BA2D9B629AD7EF2DDF06A68CD8
+          0BE9B535D88BEDEBE329F343917A78A5D136836B88D109662C2D1B56AA28CF7D
+          BF38C04B34DA298068B187130A35DD13F3FAF3BEF655D4B59A87BABEA6DBA297
+          FF1B90F10AEF5AA481D1A3F4A8E17B398C74A0D9E6DEA6A647E8C05C8D48B69B
+          C6AC819D2D6FD176D7B0AFC31B1368B89E00E8E28BFE6E54BED3C2BE011E657B
+          431BEDF2CB2F74FF84CEE76C55DE835924B1E15E76A428D422B517C8C63CA962
+          0D86F14D409459BED179127322A35DA082D9CF7B6C0F389A15D50D9476B9228B
+          9FB4418F4712BC5D93E136413350E82E74386A9651E3EBF85ED3A73FE82EDE0E
+          AAA035DDF94DEC9C5ED1F6328BA2895C900BADBC835E9DD0103D7FA38E9685DE
+          286AA10BB534ABC6464573331DAF8E4FAC26F82605D1E3ACD9971A0A808D3626
+          2008DDE120D1FA1E5563D40F0BDD76D0156D41CFA23D21BE5F5EE5183ABCE930
+          202426779BBB3D6AFA7F0FB1EB01173B1374B4FD3815B6F1465D06C54ED53D33
+          CE7E22E4FC689B854ED412AB4B3C85F716902076070274152CB665C929853698
+          67228532EA9BD5303559015BC3A7BBA2C8CAD0F28008918A848D63AC536A9941
+          2FE2A5B9A6B3B7A0015DC859365677A91A1D8F025AB427A7341D2D8760EFDB48
+          053446A7A0439B0A6FD288CFF7D3E13D70787BC639E791A62DEC73E89E56A7B0
+          DB4D47C8D339685BECAFCE5DCC41F77DD4C660FF3D5F436D8B6C188F5BE8E166
+          5A1655124B27706381BFB1B69B8E267192F3A42802154005E3A4881F6AD0AF84
+          418F0D3547656966EF51788CFC36BCA9E98AB04CDFC15CA8D73559B4A0B7351D
+          2D515FBBC8CB194DC73DC9FDC8FBCC91E3FCAD685711A499EA463EC499C47757
+          72D44E9871E65F9E4FB73C3F47BD809EA776CA04F3A71B15B816B1803EFA59F5
+          DFD862CE806B2089330328F4A9F81E8B9B5DE20163FF27AD8B4F77706341E219
+          CDDD013EB57D440D1D7BE6D6044C619FA5B5C17D6BEF10442E37163AEE3E091D
+          FD0C5E3895A5A61F9DFD63D223744050F7B2D4F6EDF53406D7C883B6D7DC2D30
+          3536A8E56DE4503D1CCD73E18712BA14F644D9188B690AA50BE8895FDE0A6A2E
+          9FAD4D61D1156FB5C0620F8E107A5C1C00D526FBF68661C1183C82E23DBB6849
+          0B7A5BE0AE7DD2F11DDD8D4285C15BABB7B3170BDD56BFD3D01BA7759A1E1277
+          76DE57BEF083A05BB4EA65356D61079CAC9CCC66AF8C15A3EE068AF459D72260
+          89B3A36D95A6BB5652461918DA7C57431FC50D93508660A853763879325E422F
+          6B049E4C05D1E6C877EC687A1D91104653BEE7D324CE82EA281B75E19A084F6C
+          659029DB1C63EDF98ED0953DFC9CA613D2D47449993D7B1EB3DB42189F06BD98
+          B4D4D5F6B930719EB9FDCCF39AEE1D71897575277061B4ED5DD0A1C0748D2D78
+          7C2AE9B20B1D8D3EDB571C99910DE8E0A783A1B7730D11D800132F958CAAEF79
+          7AD0CC350AAF14BC571DF2448205B8D47BD8CEF5981BF20B2D50347ED21DD327
+          AC77BDCC0DD51B7B1AD4745FE6B3E0279E7D17FD437A4925EBCF9053E33674D7
+          7C9B094F56BCD9C84FC4C607834A67724A5AC86D625DC3B9BB19BAB3B0DCBBEB
+          36EF49C555FDE7973E3169AE0B9D90FF400D3975E51674AE0A6F1013FEC5BA1A
+          469EA7B6EAE909ECF18DD895DB6732E6C67A6395C0E1A7A0A3A741A28D5F5AEF
+          FBBF6A6F33DAA57D0C4B3C4ED34BEEEDB96A6E298A09213B9385EDA8B990DEEB
+          A661EA5D87EE6F39C661E4D258430D5FDD2943CEB6A2E0D5452BCF04DD7EB103
+          DD913DD9CD76A0ABC085006438DD180AEE20A518CD01070C757AB26574A6F764
+          9EE52ACF8C0E821D409FC62FE40D34E1054EF7431CCE41C7DEC52F347D2E53B2
+          C8F31C1C4DB42EB5FC88D9FE14E845D29B9C24B2111D2F169DE9F64FD682D275
+          EAC575E87BEB8251F5BA83E652A08A157EFA44952A35DEDA338F924031BA38E4
+          3B30AA64FBAA2DE8F626D02B3FE126B5A117A6A15073A871B303B883463038D5
+          2C4ECA3842B0A02B4D7534C28441B029D2C823F13770D9641C11926FF915E8A8
+          E98A04D12AF7491631F4239B4DD297855EC55EAE2736775368AF425FC476B8C2
+          0F3750983BA38FB7833353E5BC773D09D718C2512F7217B4CCA123E8D35DD96A
+          DC021D2B0980DE6638CC9332F40D61337111C3850C7E0A0306FCCBC671A43EA1
+          0B30E4D6E89DE83311B996A6C32B9D6C8DC6B37CCBA16E2B9A7FBC817F3C748B
+          DD4C473FAE8E4E08C94523847315BA1B2CB34DC3ECE0520AACA6376FA33805D7
+          6C0C1622A670CDF669D6A8805DE851BE2BDFF90DD029BA8304537D6C91749640
+          138CA69B853EF1626CE0A0A1D1AEF5C0CECDF9E9213DE3A77734DDD8D3D947A0
+          0AEB4E1FA964CF806EDDF619FBFB58D73BCB8B896419C8D1EA46EBBD0A05E917
+          7D50AC84869A5EC5CDAB77C465C003E6ACC46845EB0A7852D36F864E802714A7
+          E5588E19412FFCC314CD7BA195E05D8C5764FE1BD10AE5FCF4B311B9234DAF5C
+          4DB72748FF2DD0F15DCFD8FF74814B4622FCB8E6459A1F3A75DB19D8C278A6AB
+          9AAE9684C41A4CB9F9A14CAA2BFBF4755494CCE36A3C3D657C92594BD10FEA24
+          BC8F35EFC4D591603F2E7E7446163FF3D0564AE6C7B54B790F74ECD3CBB2F6A1
+          A5A1F3CDC74DB92741B708F33AF5CDA5344C8C66C55D94036C986765D85B600D
+          FFABD63B7CF43278FD26A8D4C1427FD1BF7C57B2317C8AD8D564BC4103AB1EE3
+          3809FD66438E64B3D855D0FA390122B3F757F2B91B7A3BF65E3EF4DD23AA9F01
+          DD9F577318783A27C6A7DE2F8647282E9457B9EC0EFB96920BFD57E5A783334C
+          A67B4BD1054A4CE9A797CFD7896A076A16074D55EE42D7A1B67ED75597AD05BD
+          29FD416F8FB2FD0BA183D4BD1317A9BF690DBE34E7AB7202D8713CFB6A18560A
+          024D86F5997E10518EA71F45E49A474283638DE0F24577FD7417853D75E573D0
+          E1E8704FC6E57F64BC8BC30769FABFAD7907552FDF24E7061CA8CEEA626EBE6A
+          03BBA2013F37BDA91991E3A9C5E45A8552D33BD01BAF4924D626AEA81E876111
+          E3D5306C053DB2975B517876F71FA83A14ED51D36BEB03BDC39336E617865EB4
+          D622F96FB6EE0EADDBF9AA8DB50439F4C6517AAE4AB7C2B0CE232ADA91D39A4E
+          1BF157AED1F3390FDD0DBE47EB56100707E64E434710816C2559CAE2FE7AD1F4
+          DA31E759A8FE4D2E5B0B3AE7DECE9CCCA6C045E5AA403DA7E747123BB177CBAD
+          359E5EF5E976BC8A075287B67F87EE20B5636EBCB4DF8F62EFB8018756A56255
+          4B44950BA51CFBE90EDB74EF57EE87AFC94DD005A946D9F2B0BEDB233F7DEC5B
+          675F986CBC0D2E8CC37E6DE864116C4E957CC7EA6247A36C620D2F6A5D0DB8BC
+          E82A099228D8CD5303EA6B07E99DE1D7E829BBD0A1FDC79C0C8CF7D843308A66
+          26E26FD2C89C6946E4B0379849A96CD60403BD842A73193A5439A8249298225D
+          6A1FD6299BFAC84FC78122033524E01CE37AEB1E667C3D1FBA907F41EB7EB264
+          19A8BF8ABD0D1D1B78455D3FEDA08F0F55BA14A63BF3F9CA1741926B43D4F758
+          B5E6C51E8FB2712DC4DAE8408DA3245724F0747838CCDB39721574213D1CCC99
+          7BBB18DAFA30F4030DBCCE432FB278744A2202F69ED5F428ABEF7677A4E9442D
+          540C46AD3F59A397D24314F673A09F9FC78C11DB39AE2E7679CE901BC5EAAA2B
+          FA6D04A1B3C6D9314B05135F4165F884508A9FC87855B9EFC7D091FA28B63699
+          E211BCA2374CE3B3D08B14E8E6281B54B80887F0E6FB90A4E257604745DDFD9D
+          860E0608A1F33DC9676E68B565DDCC7E865DEB7DB221BE17A663B41517F1DD53
+          99BE307467D38F7C7A79BD58375EBD5897D06D934C400BB7A8E9ADA208DDEEAC
+          032873B9AD534951F58899B66C629EFACB6CDDCA08C1089B9DEC604D87D678BA
+          1DCCA9AF67D36FDD787A5E41875AE71F0237F83FDDBBE77C45E87EFB45CC7F84
+          8DF17431C35C5951059567877EA6F37E39E837AD37048D2A74A1E1AED1244F32
+          D8BC4F5926C2566D090F3197D12455F9F40721DF89C9829D6C8CB3713D0E1391
+          EE5B6F5310CDBC11DB1587EC47592A8B8B06099014F2E500501D02AED9287767
+          377BCF4E76AA8A16771B8D5212AC9C01929019A73FC8F71C08A6B8A329C12AD4
+          2125C5FD88714AC25F741A7A3FB0ADF75C5ACEFF4BE8D57A43E9A526BE33094C
+          B804C4F24343B01034FB3ADA473843602C896E572734D27577B20B978CB20371
+          8724C58C42B0E9CAB82E5EBE0CF1721918638B42C9222F9AFAADFB6BDCAD4802
+          5F41871ED866AA3BA14E1F5D2570E5499CB31BA77C5D952F09DD5974BBE0D234
+          7570BE3A21D6627106D1CED42BB61197969AF9DD7C9DC6919DAD445A722423BC
+          9C3B5C5F140F6A8C24B8B393C6C9DBF7D7FAC6AD5BEFE66189CE3B4A5AF783F7
+          9D14E533FE91C5275AF235A13BDF58047D2E4E205CE4EF3DF9A4EF38A4287ADB
+          C9DF9DC62E7A4D7BFFB2D0B1FCB0CAD483E42B431FD69E7990F4075D8797E7E8
+          BF173A1C111C3E1E67BEFB79F097B4FFD2A4FE5A64FB549BAAD94D45013B7B06
+          7F7DE5BF3AD7E304466FB9BA9245E1C2B0F456E89FAAE94BFCF52B94C19CFC82
+          4E06FE216B96947B564C0AB520B84D3B7BDD1650E05307E0D0319604F74C6F7C
+          92F4F8877BB856B740BF5DD31B59174F16F0AC295ACC2AD13386BFF908BEA6A9
+          2EF7647B5F87384C92A6A1B4EB07CCC1711FFDE34FF49E4B8FEFC3C5EEE3C90E
+          8F923EA143A37601E6FBFBF428BB60BD9FCB2410E4A25C5CA5A55E2E474F708C
+          8D18C582F0C0D27D1EC2D7304D7CAAEC9E30DBD0192E66921D42839D109F669A
+          E4819F53D0FD659CFAD343B9E497B8736598CBB7F8A193F4773F9CD3FD85F526
+          DE091DB3C62FB5EE1418F8D74EF2CE87ACD68B126A92D94E3AA7743D3FE4692E
+          E0AB1AAD107A96CE496A978309A09DC7B5917C4943A623D8FA7BECFBEB79C237
+          3EF34BE894DD78F95BA4974EA3CF35674848F7E7971979A79F4E493391F2E85A
+          32E2BFBE9FDA53AD4141A2C6D9EA8F761C3B694FEA2F87B375A59C6A8266A94A
+          5E30DA3D151BF5FA9B44D9686BA1536DA28C7A261D99C3DEB7D0C9D418CFCB02
+          FF1066F8521BD0A9C7A75BD297C82F35CA46ECA4D30B0B0602743715F3C688DC
+          D8AC2E15E18BC399431BE2E5F843BC7A4B23D42D4AF8658F504E4375D0E19389
+          9736408E65F661C2F6DAB6015AF22C02E824D8D38D854E133E253951874C8429
+          19AB2674CEF6A437E92571A6DF75E484E1E7578EBB1DFA6D6B08A2B97C51D6C4
+          9558CFD7978AB90C666393DC5ACD3BCE830ABD519CE5AF3FBDD76D0495279616
+          7AEAD385AF8D1460AF3380AEA0AF61896728D3E2A879174691FE24F852A36C4E
+          F8E96546DCCBBD0DBACBA4B8BE862027F74873D984EEC63AB60D68476F389F7A
+          12A6A97A4D476FAFDB349CEE5306CDFB081E6294EED84C8149A7348FFE9E1245
+          A6BFAD553FB5869C6AF6E9A4D73EBD8F93F4BD4CE8B9D5655A7EFAB9CC1952AE
+          2EB6D6BD0C2809BBA2DC1D062F406736F90AC73989B725DE6247F5B734C6A4B8
+          5738DF682F83A90F1FBC2442EF3DFAE775059E9B50CBC386E970B465625325B3
+          89775FFFBC7CAD9528EA1786D8EB196995DC021D87D2BF59E49F1DCF720B8412
+          A10D9338350E6A8F9036F542249C480CBD506BFFC9F21FD77238FB90F6E9A53D
+          E2E1FA97D3D8AF432FFE36DBEEF391D7C2EDD066F15C496BF3BF571EF4971D00
+          7B3123AD31C9EB7262A4395E5D6C90C7C8C3FE185F3511B1BBC6C049E8D8F55A
+          E4C35F577E823CF0CF6EC24F137B3595E8C4808B71CB460EC89F238F835E60CF
+          0ED4E9312966951CBB6CA65843D01F1AF6E7C823A19713118BE044317ED2816E
+          7BFDC0A703F2E7C963A1BBBE5DD1C90FA65F467F1793909A7D7AA1E5ED05E506
+          79AC3C1ABA9D7F3AD9465A4ECBB02AE7E55C36BB96E8D8A703F2E7CAE3A1BBBF
+          8612D54B42DB6CBAE2E238AB6140FE6C7906F4327FBB92851FBB7FB5A6835FFE
+          7C790EF4B6E01AB0B92049773DE0419E249F011D67F6988CF8D40CC83F453E05
+          3A0E7F25EED7209F209F037D904F9501FA1F2803F43F5006E87FA00CD0FF4019
+          A0FF81F27FBC37FB2D281346200000000049454E44AE426082}
+      end
+      object imgLogoApi: TImage
+        AlignWithMargins = True
+        Left = 510
+        Top = 0
+        Width = 254
+        Height = 90
+        Margins.Left = 10
+        Margins.Top = 0
+        Margins.Right = 0
+        Margins.Bottom = 0
+        Align = alClient
+        Picture.Data = {
+          0954506E67496D61676589504E470D0A1A0A0000000D49484452000000E60000
+          005A0806000000AC622AB5000000017352474200AECE1CE90000000467414D41
+          0000B18F0BFC61050000000970485973000012740000127401DE661F78000007
+          C74944415478DAED9D3F6CDB4614877F99E2CD5B3AC8964C08193B2736604080
+          8176CC20C0810A4443D3A59E942129E0A5C962A0F5E04CEED27470811A0EE021
+          630B18506340B1E68E41E0F80F877AF3964CEDC96E5C4511797724DFF148FDBE
+          2990158924EED3BD7B8F7C77ED1F0508215E718D6212E21F1493100FA1988478
+          08C524C4432826211E423109F190DCC50CC3F0F21F950A2A795F0D32117C1873
+          958ABF23CEB998617F1707BD7DEC770F7138F47AD0DEC4D3A6BF178A9484FE06
+          EEAC75875E081004352CB696D1BCE5CFF8732666A82EC8BABA2087117FA798C4
+          099F88394C8046BB85E5E6ADDCA337076286D8EDAC60EB30FE5D1493382156CC
+          FF081A587DF800794EA0C262F6B1D15943F750FF4E8A499C6022E60501DA9B4F
+          91D7901414D36CA6BCBA0C1493B8C058CC016AE67CA166CE1C0E534CCC70B783
+          15532B41318923ACC4543456F1E2817B3585C45421EC1D15C25AFC0F8A499C60
+          2B664E21AD8C98A6271F04682CB6B0707B0633AC63124784611FA707A7E8ED6F
+          799BFF1011B3BF71076B5DFF4E9690510665BC95B56EFC9B8236369F369D4E1C
+          02621A247D728ADB0919873E1FE23E092420A67E7DD9587D81527979F20A67DB
+          2FF1EEA317E770E3D15D4C65FE5D3B38DE7E9BCD67D5E6305DADE2FACC3CA666
+          131F10CE777EC3F951F43BA616BFC28DF9C45F204FB88BCECA16A2D574BFCECC
+          41CCFC52D052BCDBF916AF7F79F3C9EBD38FFF40753EE32F7BF503FE7ABC2770
+          16754C2DB531DBB295F404672BF7F1F79BE8774C7DFD0C37EF7A2CA636CAA398
+          05E4158EBFFC1EE7E3FE54BF8F9B9B19CF9A6262FECFD4D213CC3E9A373C6E8A
+          2901C54C4BAC28757CF6F34FB891E5987420E6E5A12FA1BAF91DA6B56FA49812
+          50CC949CFFF8058E633CC97C50BA127380919C1453028A998A9830F60A35B87F
+          3799794CBFD2A19803B4E138C5948062A6202AE9334AA64920D7626A8F9F624A
+          403113A31F90572C3DC1E78F3232330731E3677D8A2901C54CCAC90E5E7FF36C
+          A476194586E1AC4E4CF52370B33563F659A73D9CFDFA0CE7063F2ED1B326C594
+          8062264497F41925B3C16920A6EDEC6C1492477E2EC594806226C224E9334256
+          354D01318DC2F2C8E3A7981250CC24245AE76554D31411D364D68C0AC729A604
+          143301B661EC1559248184C4D4AF99A37E5828A60414D316ABA4CF2819248128
+          A60014134517333EE4AB637A690EE77BD1E2A4AE69524C0126414CED23344516
+          5333082F1224559CC52586D286B35C630AA07F86D8F5A38AD98BA96D2B526031
+          35527C1880F16BD094492011310DB2CC139D9585F387FB3316D3E0047368D390
+          15C6C2190A9C88CCC53C51E7755F9FCC2A751DD3A41D8EDB703643314375722B
+          DA5E3FC56D2BA299553E9A516CDE6B7B1859DDF9738AF7BD9738FB730FEF26FE
+          CE1FD376AB811ABE0F55482B6F673A31C350E9788A83831EF6B7BA30E9225BD4
+          265CBA35D8E8E0D39554122781F2B85736F687A41C62DAB5B50C10346AA8A18A
+          85E5A6C8560A29C4B4EF1D5BDCF5A56EF08D59374A654FF974891049C6B35C78
+          EB54CCA2CE96DA52C2D81945376013D6345D8BA9FD01298B98F6BB079443CC02
+          277D74616CD48C621BFE1AE1B48381C95AB83C62DAEEB7537C310B2CA5BE9410
+          33F3259A697587E3AAE78FE9B19549CC013672165DCC9CB7344B45AAB56282B5
+          69DAE3494D5D4500AB2A02303DA89289A9BD416698C28B39A098899FB4D9D5CC
+          C3592931EB4AC87BAB178D99EDCA386512D3764C97424C14AF86A9BD7FD42081
+          93C5670CA3135385A0D57B55F3739C99C1F46C1A69CA23A6C99E3B1FE3AB989D
+          6D740FFDC86249A0BD7FD4A8E4A11FB856354DA9324C62CA226669CA25438421
+          FACFD7D5AF8D5ED2E2944C0C065C7D09D7E70C3EEAED5E7C5F1D1B9928A60C16
+          5BC037DA8B58B87D1B83FBAB2A1599B19CEDBDB2262757947036D57397B65824
+          8128A60846354C87D585CC9F2ED1C6E905299D24EE529010E3C14B3145D0AF2F
+          DD262FF93CE6581234DB4A8B69DD90620AA0AF5DBA5E82B183C1387269AA6C18
+          CE524C0126A18341E1C5B4E8B09E352652514C012826BC17D369D26714839A26
+          C5148062C277314D370A92425BD3A49802504CF82DA63EE9331864B30BC9BFE1
+          FDB6A68D872E09443105A098F05A4C6DD227836EEA69BF83620A4031E1B398DA
+          DA6526FB8F98CDCA910399620A4031E1AF982985B1407FF3424C1288620A4031
+          E1AB98FAA44F469B020D30A89346268128A60014137E8A99661B3AA1EF8B128C
+          620A4031E1A59806B5CBD47B8E8C90784B028A2900C584976292098762826212
+          FFA098A098C43F28662E2749483CFE8D590131FDDB6B9090583CDC3A52404CFF
+          9E0627241A3FB78E1411D3AC7F4A03EDD6329A0EB63423642CA10A61D75508AB
+          EB2197439F2A11316DBB5907410D8B9494B8408DCD8DE7FB3852369A365ECD63
+          E92523A6F5E62C456A6B490A8DD53E9803F25976098909CB5993621247588A99
+          57A2524E4CD8ED37483189136CC4CCB107B2A89897D7A153B20EEDA4D0988AA9
+          A4DC5452E63522C5C51C10AA8BB1AE2E467C469A62120768C51C6C81F0100F72
+          1E8B4EC4BC2454D7641DDB11D9308A499C102366D068A3B5DC840FC50187620E
+          11F6D13FE8A1777C84A3A3CB976A8BF9FF4A91094089D9D9FE30E86AA855AB17
+          1B04DD12DA1C2829F988490889856212E2211493100FA198847808C524C44328
+          26211E423109F1108A498887504C423C846212E2211493100FA198847808C524
+          C4432826211EF22F047BF45C48E8625C0000000049454E44AE426082}
+        ExplicitLeft = 513
+        ExplicitWidth = 368
+      end
+    end
+    object PageControl: TPageControl
+      AlignWithMargins = True
+      Left = 3
+      Top = 187
+      Width = 758
+      Height = 465
+      Margins.Top = 5
+      ActivePage = tbsMultipartFormData
+      Align = alClient
+      Style = tsFlatButtons
+      TabHeight = 25
+      TabOrder = 1
+      TabWidth = 120
+      object tbsMultipartFormData: TTabSheet
+        Caption = 'MultipartFormData'
+        inline frmViewMultipartFormData: TfrmViewMultipartFormData
+          Left = 0
+          Top = 0
+          Width = 750
+          Height = 430
+          Align = alClient
+          Color = clWindow
+          ParentBackground = False
+          ParentColor = False
+          TabOrder = 0
+          ExplicitHeight = 430
+          inherited pnlLeft: TPanel
+            Height = 379
+            ExplicitHeight = 379
+            inherited bvlLeft: TBevel
+              Height = 356
+              ExplicitHeight = 424
+            end
+            inherited vleHeader: TValueListEditor
+              Height = 356
+              ExplicitHeight = 356
+              RowHeights = (
+                20
+                20)
+            end
+          end
+          inherited pnlClient: TPanel
+            Height = 379
+            ExplicitHeight = 379
+            inherited lblRoute: TLabel
+              ExplicitWidth = 402
+            end
+            inherited gbxStream: TGroupBox
+              inherited imgStream: TImage
+                Stretch = True
+                ExplicitLeft = 0
+                ExplicitTop = 17
+                ExplicitWidth = 395
+                ExplicitHeight = 82
+              end
+            end
+            inherited gbxFields: TGroupBox
+              inherited vleFields: TValueListEditor
+                Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goColSizing, goRowSelect, goThumbTracking]
+                ScrollBars = ssVertical
+                RowHeights = (
+                  18
+                  18)
+              end
+            end
+          end
+        end
+      end
+      object tbsStream: TTabSheet
+        Caption = 'Stream'
+        ImageIndex = 3
+        ExplicitLeft = 0
+        ExplicitTop = 0
+        ExplicitWidth = 0
+        ExplicitHeight = 0
+        inline frmViewStream: TfrmViewStream
+          Left = 0
+          Top = 0
+          Width = 750
+          Height = 430
+          Align = alClient
+          Color = clWindow
+          ParentBackground = False
+          ParentColor = False
+          TabOrder = 0
+          ExplicitWidth = 750
+          ExplicitHeight = 430
+          inherited gbxRequestURL: TGroupBox
+            Width = 750
+            ExplicitWidth = 750
+            inherited edtRequestURL: TEdit
+              Width = 736
+              ExplicitWidth = 736
+            end
+          end
+          inherited pnlLeft: TPanel
+            Height = 379
+            ExplicitHeight = 379
+            inherited bvlLeft: TBevel
+              Height = 356
+              ExplicitHeight = 375
+            end
+            inherited vleHeader: TValueListEditor
+              Height = 356
+              ExplicitHeight = 356
+              RowHeights = (
+                20
+                20)
+            end
+          end
+          inherited pnlClient: TPanel
+            Width = 491
+            Height = 379
+            ExplicitWidth = 491
+            ExplicitHeight = 379
+            inherited lblRoute: TLabel
+              Width = 488
+              ExplicitWidth = 402
+            end
+            inherited gbxRequest: TGroupBox
+              Width = 491
+              ExplicitWidth = 491
+              inherited imgRequest: TImage
+                Width = 487
+                ExplicitWidth = 401
+              end
+            end
+            inherited gbxResponse: TGroupBox
+              Width = 491
+              ExplicitWidth = 491
+              inherited imgResponse: TImage
+                Width = 487
+                ExplicitWidth = 401
+              end
+            end
+          end
+        end
+      end
+      object tbsCompression: TTabSheet
+        Caption = 'Compression'
+        ImageIndex = 4
+        inline frmViewCompression: TfrmViewCompression
+          Left = 0
+          Top = 0
+          Width = 750
+          Height = 430
+          Align = alClient
+          Color = clWindow
+          ParentBackground = False
+          ParentColor = False
+          TabOrder = 0
+          ExplicitWidth = 750
+          ExplicitHeight = 430
+          inherited gbxRequestURL: TGroupBox
+            Width = 750
+            ExplicitWidth = 750
+            inherited edtRequestURL: TEdit
+              Width = 736
+              ExplicitWidth = 736
+            end
+          end
+          inherited pnlLeft: TPanel
+            Height = 379
+            ExplicitHeight = 379
+            inherited bvlLeft: TBevel
+              Height = 356
+              ExplicitHeight = 375
+            end
+            inherited lblHeaders: TLabel
+              ExplicitLeft = 3
+              ExplicitWidth = 247
+            end
+            inherited vleHeader: TValueListEditor
+              Height = 356
+              ExplicitLeft = 0
+              ExplicitTop = 23
+              ExplicitHeight = 356
+              RowHeights = (
+                20
+                20)
+            end
+          end
+          inherited pnlClient: TPanel
+            Width = 491
+            Height = 379
+            ExplicitWidth = 491
+            ExplicitHeight = 379
+            inherited lblRoute: TLabel
+              Width = 488
+              ExplicitWidth = 488
+            end
+            inherited lblStatus: TLabel
+              Top = 363
+              Width = 485
+              ExplicitTop = 363
+            end
+            inherited mmoText: TMemo
+              Width = 491
+              Height = 337
+              ExplicitWidth = 491
+              ExplicitHeight = 337
+            end
+          end
+        end
+      end
+      object tbsJSON: TTabSheet
+        Caption = 'JSON'
+        ImageIndex = 1
+        inline frmViewJSON: TfrmViewJSON
+          Left = 0
+          Top = 0
+          Width = 750
+          Height = 430
+          Align = alClient
+          Color = clWindow
+          ParentBackground = False
+          ParentColor = False
+          TabOrder = 0
+          ExplicitHeight = 430
+          inherited pnlLeft: TPanel
+            Height = 379
+            ExplicitHeight = 379
+            inherited bvlLeft: TBevel
+              Height = 356
+              ExplicitHeight = 375
+            end
+            inherited vleHeader: TValueListEditor
+              Height = 356
+              ExplicitHeight = 356
+              RowHeights = (
+                20
+                20)
+            end
+          end
+          inherited pnlClient: TPanel
+            Height = 379
+            ExplicitHeight = 379
+            inherited lblRoute: TLabel
+              ExplicitWidth = 402
+            end
+            inherited gbxJSONRequest: TGroupBox
+              inherited mmoJSONRequest: TMemo
+                ReadOnly = True
+              end
+            end
+            inherited gbxJSONResponse: TGroupBox
+              inherited mmoJSONResponse: TMemo
+                Lines.Strings = (
+                  '{'
+                  '  "id": 2,'
+                  '  "name": "Ervin Howell",'
+                  '  "username": "Antonette",'
+                  '  "email": "Shanna@melissa.tv",'
+                  '  "address": {'
+                  '    "street": "Victor Plains",'
+                  '    "suite": "Suite 879",'
+                  '    "city": "Wisokyburgh",'
+                  '    "zipcode": "90566-7771",'
+                  '    "geo": {'
+                  '      "lat": "-43.9509",'
+                  '      "lng": "-34.4618"'
+                  '    }'
+                  '  },'
+                  '  "phone": "010-692-6593 x09125",'
+                  '  "website": "anastasia.net",'
+                  '  "company": {'
+                  '    "name": "Deckow-Crist",'
+                  '    "catchPhrase": "Proactive didactic contingency",'
+                  '    "bs": "synergize scalable supply-chains"'
+                  '  }'
+                  '}')
+                ReadOnly = True
+              end
+            end
+          end
+        end
+      end
+      object tbsJSONReflect: TTabSheet
+        Caption = 'JSONReflect'
+        ImageIndex = 2
+        inline frmViewJSONReflection: TfrmViewJSONReflection
+          Left = 0
+          Top = 0
+          Width = 750
+          Height = 430
+          Align = alClient
+          Color = clWindow
+          ParentBackground = False
+          ParentColor = False
+          TabOrder = 0
+          ExplicitWidth = 750
+          ExplicitHeight = 430
+          inherited gbxRequestURL: TGroupBox
+            Width = 750
+            ExplicitWidth = 750
+            inherited edtRequestURL: TEdit
+              Width = 736
+              ExplicitWidth = 736
+            end
+          end
+          inherited pnlLeft: TPanel
+            Height = 379
+            ExplicitHeight = 379
+            inherited bvlLeft: TBevel
+              Height = 356
+              ExplicitHeight = 375
+            end
+            inherited vleHeader: TValueListEditor
+              Height = 356
+              ExplicitHeight = 356
+              RowHeights = (
+                20
+                20)
+            end
+          end
+          inherited pnlClient: TPanel
+            Width = 491
+            Height = 379
+            ExplicitWidth = 491
+            ExplicitHeight = 379
+            inherited lblRoute: TLabel
+              Width = 488
+              ExplicitWidth = 488
+            end
+            inherited gbxJSONReflectionResponse: TGroupBox
+              Width = 485
+              Height = 350
+              ExplicitWidth = 485
+              ExplicitHeight = 350
+              inherited mmoJSONReflectionResponse: TMemo
+                Width = 481
+                Height = 333
+                ExplicitWidth = 481
+                ExplicitHeight = 333
+              end
+            end
+          end
+        end
+      end
+    end
+    object pnlHeader: TPanel
+      Left = 0
+      Top = 97
+      Width = 764
+      Height = 85
+      Align = alTop
+      BevelOuter = bvNone
+      Caption = 'pnlHeader'
+      ShowCaption = False
+      TabOrder = 2
+      DesignSize = (
+        764
+        85)
+      object shpHeader: TShape
+        AlignWithMargins = True
+        Left = 4
+        Top = 3
+        Width = 757
+        Height = 80
+        Anchors = [akLeft, akTop, akRight]
+        Pen.Style = psDashDot
+      end
+      object pnlHeaderRight: TPanel
+        Left = 504
+        Top = 0
+        Width = 260
+        Height = 85
+        Align = alRight
+        BevelOuter = bvNone
+        Caption = 'pnlHeaderRight'
+        ShowCaption = False
+        TabOrder = 0
+        object Label1: TLabel
+          AlignWithMargins = True
+          Left = 10
+          Top = 27
+          Width = 247
+          Height = 13
+          Margins.Left = 10
+          Align = alTop
+          AutoSize = False
+          ExplicitLeft = 13
+          ExplicitTop = 19
+          ExplicitWidth = 187
+        end
+        object lblHorseGithub: TLinkLabel
+          AlignWithMargins = True
+          Left = 10
+          Top = 7
+          Width = 247
+          Height = 17
+          Margins.Left = 10
+          Margins.Top = 7
+          Margins.Bottom = 0
+          Align = alTop
+          Caption = 'https://github.com/HashLoad/horse'
+          TabOrder = 0
+          OnLinkClick = lblHorseGithubLinkClick
+          ExplicitWidth = 176
+        end
+        object lblHorseGithubJhonson: TLinkLabel
+          AlignWithMargins = True
+          Left = 10
+          Top = 45
+          Width = 247
+          Height = 17
+          Margins.Left = 10
+          Margins.Top = 2
+          Margins.Bottom = 0
+          Align = alTop
+          Caption = 'https://github.com/HashLoad/jhonson'
+          TabOrder = 1
+          OnLinkClick = lblHorseGithubJhonsonLinkClick
+          ExplicitWidth = 187
+        end
+        object lblHorseGithubCompression: TLinkLabel
+          AlignWithMargins = True
+          Left = 10
+          Top = 64
+          Width = 247
+          Height = 17
+          Margins.Left = 10
+          Margins.Top = 2
+          Margins.Bottom = 0
+          Align = alTop
+          Caption = 'https://github.com/HashLoad/horse-compression'
+          TabOrder = 2
+          OnLinkClick = lblHorseGithubCompressionLinkClick
+          ExplicitWidth = 239
+        end
+      end
+      object pnlHeaderClient: TPanel
+        Left = 0
+        Top = 0
+        Width = 504
+        Height = 85
+        Align = alClient
+        BevelOuter = bvNone
+        Caption = 'pnlHeaderClient'
+        ShowCaption = False
+        TabOrder = 1
+        object lblHorseTitle: TLabel
+          AlignWithMargins = True
+          Left = 10
+          Top = 7
+          Width = 491
+          Height = 13
+          Margins.Left = 10
+          Margins.Top = 7
+          Align = alTop
+          Caption = '* Webservice developed using the Horse framework.'
+          ExplicitWidth = 254
+        end
+        object lblHorseJhonsonTitle: TLabel
+          AlignWithMargins = True
+          Left = 10
+          Top = 45
+          Width = 491
+          Height = 13
+          Margins.Left = 10
+          Align = alTop
+          Caption = '-- Jhonson'
+          ExplicitWidth = 51
+        end
+        object lblHorseMiddlewaresTitle: TLabel
+          AlignWithMargins = True
+          Left = 10
+          Top = 26
+          Width = 491
+          Height = 13
+          Margins.Left = 10
+          Align = alTop
+          Caption = '* Middlewares'
+          ExplicitWidth = 68
+        end
+        object lblHorseCompressionTitle: TLabel
+          AlignWithMargins = True
+          Left = 10
+          Top = 64
+          Width = 491
+          Height = 13
+          Margins.Left = 10
+          Align = alTop
+          Caption = '-- Compression'
+          ExplicitWidth = 72
+        end
+      end
+    end
+  end
+end
