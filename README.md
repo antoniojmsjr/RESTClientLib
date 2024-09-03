@@ -46,7 +46,12 @@ Uses
 
 begin
   TRESTClientLib
-    .Build(TRESTClientLibRequestLibraryKind.NetHTTP);
+    .Build(TRESTClientLibRequestLibraryKind.Indy);
+
+  ou
+
+  TRESTClientLib
+    .Build; // DEFAULT TRESTClientLibRequestLibraryKind.NetHTTP
   ...
 end;
 ```
